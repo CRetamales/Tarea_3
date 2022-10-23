@@ -88,6 +88,7 @@
   justify-content: center;
   color: white;
   font-style: italic;
+  text-transform: uppercase;
 }
 .dbugle-container__nav {
   grid-column: 1/4;
@@ -105,7 +106,7 @@
 }
 .dbugle-container__main {
   grid-column: 1/4;
-  grid-row: 3/12;
+  grid-row: 3/15;
   display: flex;
   align-items: center;
   background: black;
@@ -137,62 +138,76 @@
 }
 
 .dbugle-slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
-  text-align: center;
+  position: relative;
 }
-.dbugle-slider__slides {
-  width: 500%;
-  height: 100%;
+.dbugle-slider .inside {
   display: flex;
+  position: relative;
+  transform: translate(0%, 0);
+  transition: transform 0.5s ease-in-out;
 }
-.dbugle-slider__slides input {
-  display: none;
-}
-.dbugle-slider__slides__navigation-auto {
-  position: absolute;
+.dbugle-slider .inside img {
   width: 100%;
-  margin-top: 40rem;
+  height: 100%;
+}
+.dbugle-slider .buttons {
   display: flex;
   justify-content: center;
-  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 5px;
+}
+.dbugle-slider .buttons .button {
+  margin: 2.5px;
+  background-color: white;
+  border-radius: 20px;
+  width: 40px;
+  height: 5px;
+  display: inline-block;
   opacity: 0.5;
-}
-.dbugle-slider__slides__navigation-auto div {
-  border: 1px solid white;
-  padding: 5px 15px;
-  margin: 1px;
-  border-radius: 5px;
+  transition: opacity 0.5s ease-in-out;
   cursor: pointer;
-  transition: 1s;
 }
-.dbugle-slider__slide {
-  width: 20%;
-  transition: 2s;
+.dbugle-slider .buttons .button:hover {
+  opacity: 0.8;
 }
-.dbugle-slider__slide img {
-  width: 100%;
-  height: 100%;
+.dbugle-slider .buttons .button.active {
+  opacity: 1;
 }
-.dbugle-slider__navigation-manual {
+.dbugle-slider .next::after, .dbugle-slider .previus::after {
+  content: ">";
   position: absolute;
-  width: 100%;
-  margin-top: -2.8rem;
-  display: flex;
-  justify-content: center;
-}
-.dbugle-slider__navigation-manual .manual-btn {
-  border: 1px solid white;
-  padding: 5px 15px;
-  margin: 1px;
-  border-radius: 5px;
+  top: 50%;
+  right: 0;
+  background-color: black;
+  width: 2rem;
+  height: 5rem;
+  font-weight: bold;
+  font-size: 4rem;
+  transform: translateY(-50%);
+  line-height: 5rem;
+  box-sizing: border-box;
+  padding: 0 0.1rem;
   cursor: pointer;
-  transition: 1s;
+  opacity: 0.5;
+  transition: opacity 0.3s;
 }
-.dbugle-slider__navigation-manual .manual-btn:hover {
-  background: white;
-  color: black;
+.dbugle-slider .next:hover::after, .dbugle-slider .previus:hover::after {
+  opacity: 1;
+}
+.dbugle-slider .previus::after {
+  content: "<";
+  left: 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.dbugle-slider .next::after {
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
