@@ -1,7 +1,9 @@
+@import "nav";
+
 .dbugle-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-rows: repeat(20, 1fr);
     &__header{
         grid-column: 1 / 4;
         grid-row: 1 / 1;
@@ -16,101 +18,33 @@
     //Nav
     &__nav{
         grid-column: 1 / 4;
-        grid-row: 2 / 4;
+        grid-row: 2 / 3;
         display: flex;
         color: white;
         background: #E31B05;
         align-items: center;
         font-size: 1.3rem;
-        &__logo{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            border-radius: 50%;
-            background: white;
-            color: black;
-            font-size: 2rem;
-            margin-left: 1rem;
-
-            &__title{
-                margin-left: 10px;
-                font-style: oblique;
-            }
-        }
-        &__list{
-            margin-left: auto;
-            list-style: none;
-
-            &__item{
-                font-weight: 400;
-                transition: all 0.3s ease-in-out;
-                &:hover{
-                    color: #E31B05;
-                    background: white;
-                }
-            }
-            a{
-                color: white;
-                text-decoration: none;
-            }
-            li{
-                display: inline-block;
-                padding: 0 1rem;
-                font-style: italic;
-                border-right: 1px solid white;
-                &:last-child{
-                    border-right: none;
-                }
-                &:hover{
-                    background: black;
-                    color: white;
-                    border-radius: 5px;
-                }
-                
-            }
-        }
-        &__button{
-            margin-right: 1rem;
-            background: black;
-            color: white;
-            padding: 0.5rem 0.8rem;
-            border-radius: 5px;
-            font-style: italic;
-            transition: all 0.3s ease-in-out;
-            &:hover{
-                background: white;
-                color: black;
-            }
-        }
-        //En caso de que se haga muy pequeño el nav
         @media screen and (max-width: 630px){
-            &__logo__title{
-                font-size: 1.2rem;
-            }
-            &__list{
-                font-size: 0.9rem;
-                padding: 0 0.5rem;
-            }
-            &__button{
-                font-size: 0.8rem;
-            }
+            font-size: 0.75rem;
         }
 
 
     }
     &__main{
         grid-column: 1 / 4;
-        grid-row: 4 / 7;
+        grid-row: 3 / 12;
         display: flex;
         align-items: center;
         background: black;
         justify-content: center;
         color: white;
+
+
+
     }
     &__section_1{
         grid-column: 1 / 4;
-        grid-row: 7 / 9;
+        grid-row: 15 / 18;
         display: flex;
         align-items: center;
         background: white;
@@ -119,7 +53,7 @@
     }
     &__section_2{
         grid-column: 1 / 4;
-        grid-row: 9 / 12;
+        grid-row: 18 / 21;
         display: flex;
         align-items: center;
         background: black;
@@ -127,7 +61,7 @@
     }
     &__footer{
         grid-column: 1 / 4;
-        grid-row: 12 / 12;
+        grid-row: 21 / 21 ;
         display: flex;
         align-items: center;
         background: #E31B05;

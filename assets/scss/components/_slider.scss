@@ -1,0 +1,61 @@
+.dbugle-slider{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    &__slides{
+        width: 500%;
+        height: 100%;
+        display: flex;
+        input {
+            display: none;
+        }
+        &__navigation-auto{
+            position: absolute;
+            width: 100%;
+            margin-top: 40rem;
+            display: flex;
+            justify-content: center;
+            background-color:black;
+            opacity: 0.5;
+            div{
+                border: 1px solid white;
+                padding: 5px 15px;
+                margin: 1px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 1s;
+            }
+          
+        }
+
+    }
+    &__slide{
+        width: 20%;
+        transition: 2s;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__navigation-manual{
+        position: absolute;
+        width: 100%;
+        margin-top: -2.8rem;
+        display: flex;
+        justify-content: center;
+
+        .manual-btn{
+            border: 1px solid white;
+            padding: 5px 15px;
+            margin: 1px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 1s;
+            &:hover{
+                background: white;
+                color: black;
+            }
+        }
+    }
+}

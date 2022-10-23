@@ -1,0 +1,73 @@
+.dbugle-navbar {
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        border-radius: 50%;
+        background: white;
+        color: black;
+        font-size: 2rem;
+        margin-left: 1rem;
+
+        &__title{
+            margin-left: 10px;
+            font-style: oblique;
+        }
+    }
+    &__list{
+        margin-left: auto;
+        list-style: none;
+
+        &__item{
+            font-weight: 400;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                color: #E31B05;
+                background: white;
+            }
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        li{
+            display: inline-block;
+            padding: 0 1rem;
+            font-style: italic;
+            border-right: 1px solid white;
+            &:last-child{
+                border-right: none;
+            }
+            &:hover{
+                background: black;
+                color: white;
+                border-radius: 5px;
+            }
+            
+        }
+    }
+    &__button{
+        margin-right: 1rem;
+        background: black;
+        color: white;
+        padding: 0.5rem 0.8rem;
+        border-radius: 5px;
+        font-style: italic;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background: white;
+            color: black;
+        }
+    }
+    //En caso de que se haga muy pequeño el nav
+    @media screen and (max-width: 630px){
+        &__list{
+            font-size: 0.9rem;
+            padding: 0 0.5rem;
+        }
+        &__button{
+            font-size: 0.8rem;
+        }
+    }
+}
