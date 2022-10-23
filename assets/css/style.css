@@ -3,6 +3,7 @@
   font-family: "Oswald", sans-serif;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .dbugle-container {
@@ -18,6 +19,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+  font-style: italic;
 }
 .dbugle-container__nav {
   grid-column: 1/4;
@@ -25,6 +27,78 @@
   display: flex;
   color: white;
   background: #E31B05;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.dbugle-container__nav__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.dbugle-container__nav__logo__title {
+  margin-left: 10px;
+  font-style: oblique;
+}
+.dbugle-container__nav__list {
+  margin-left: auto;
+  list-style: none;
+}
+.dbugle-container__nav__list__item {
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.dbugle-container__nav__list__item:hover {
+  color: #E31B05;
+  background: white;
+}
+.dbugle-container__nav__list a {
+  color: white;
+  text-decoration: none;
+}
+.dbugle-container__nav__list li {
+  display: inline-block;
+  padding: 0 1rem;
+  font-style: italic;
+  border-right: 1px solid white;
+}
+.dbugle-container__nav__list li:last-child {
+  border-right: none;
+}
+.dbugle-container__nav__list li:hover {
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+.dbugle-container__nav__button {
+  margin-right: 1rem;
+  background: black;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+}
+.dbugle-container__nav__button:hover {
+  background: white;
+  color: black;
+}
+@media screen and (max-width: 630px) {
+  .dbugle-container__nav__logo__title {
+    font-size: 1.2rem;
+  }
+  .dbugle-container__nav__list {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+  .dbugle-container__nav__button {
+    font-size: 0.8rem;
+  }
 }
 .dbugle-container__main {
   grid-column: 1/4;

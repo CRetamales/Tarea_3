@@ -15,9 +15,54 @@
 <body>
     <div class="dbugle-container">
         <header class="dbugle-container__header">Daily Bugle el diario numero #1 de NEW YORK</header>
-        <nav class="dbugle-container__nav"> Este este es el nav</nav>
+        <nav class="dbugle-container__nav"> 
+            <img src="./assets/img/logo.svg" alt="logo" class="dbugle-container__nav__logo">
+            <h1 class="dbugle-container__nav__logo__title">Daily Bugle</h1>
+            <ul class="dbugle-container__nav__list">
+                <li class="dbugle-container__nav__list__item"><a href="#">Inicio</a></li>
+                <li class="dbugle-container__nav__list__item"><a href="#">Historia</a></li>
+                <li class="dbugle-container__nav__list__item"><a href="#">Servicios</a></li>
+            </ul>
+            <a href="#" class="dbugle-container__nav__button">Suscribirse</a>
+
+        </nav>
         <main class="dbugle-container__main">
             <!-- Slider Carrusel -->
+            <div class="dbugle-container__main__slider">
+                <div class="dbugle-container__main__slider__slide">
+                    <input type ="radio" name="radio-btn" id="radio1">
+                    <input type ="radio" name="radio-btn" id="radio2">
+                    <input type ="radio" name="radio-btn" id="radio3">
+                    <input type ="radio" name="radio-btn" id="radio4">
+                    <!--Slide imagenes-->
+                    <div class="slide first">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <!--Navegación-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <!--Manejo manual-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
         </main>
         <section class="dbugle-container__section_1">
             seccion 1
