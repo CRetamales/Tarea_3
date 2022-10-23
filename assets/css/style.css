@@ -1,6 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap");
 * {
+  font-family: "Oswald", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.dbugle-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+}
+.dbugle-container__header {
+  grid-column: 1/4;
+  grid-row: 1/1;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.dbugle-container__nav {
+  grid-column: 1/4;
+  grid-row: 2/4;
+  display: flex;
+  color: white;
+  background: #E31B05;
+}
+.dbugle-container__main {
+  grid-column: 1/4;
+  grid-row: 4/7;
+  display: flex;
+  align-items: center;
+  background: black;
+  justify-content: center;
+  color: white;
+}
+.dbugle-container__section_1 {
+  grid-column: 1/4;
+  grid-row: 7/9;
+  display: flex;
+  align-items: center;
+  background: white;
+  justify-content: center;
+}
+.dbugle-container__section_2 {
+  grid-column: 1/4;
+  grid-row: 9/12;
+  display: flex;
+  align-items: center;
+  background: black;
+  color: white;
+}
+.dbugle-container__footer {
+  grid-column: 1/4;
+  grid-row: 12/12;
+  display: flex;
+  align-items: center;
+  background: #E31B05;
 }
 
 /*# sourceMappingURL=style.css.map */

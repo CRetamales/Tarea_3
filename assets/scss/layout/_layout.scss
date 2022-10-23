@@ -1,4 +1,57 @@
-@import 'nav';
-@import 'header';
-@import 'main';
-@import 'footer';
+.dbugle-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    &__header{
+        grid-column: 1 / 4;
+        grid-row: 1 / 1;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    &__nav{
+        grid-column: 1 / 4;
+        grid-row: 2 / 4;
+        display: flex;
+        color: white;
+        background: #E31B05;
+    }
+    &__main{
+        grid-column: 1 / 4;
+        grid-row: 4 / 7;
+        display: flex;
+        align-items: center;
+        background: black;
+        justify-content: center;
+        color: white;
+    }
+    &__section_1{
+        grid-column: 1 / 4;
+        grid-row: 7 / 9;
+        display: flex;
+        align-items: center;
+        background: white;
+        justify-content: center;
+
+    }
+    &__section_2{
+        grid-column: 1 / 4;
+        grid-row: 9 / 12;
+        display: flex;
+        align-items: center;
+        background: black;
+        color: white;
+
+
+    }
+    &__footer{
+        grid-column: 1 / 4;
+        grid-row: 12 / 12;
+        display: flex;
+        align-items: center;
+        background: #E31B05;
+    }
+
+}
