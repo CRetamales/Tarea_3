@@ -94,6 +94,16 @@
         .noticia:last-child{
             border-right: none;
         }
+        @media screen and (max-width: 770px){
+            flex-direction: column;
+            .noticia{
+                border-right: none;
+                border-bottom: 1px solid white;
+            }
+            .noticia:last-child{
+                border-bottom: none;
+            }
+        }
     }
     &__footer{
         grid-column: 1 / 4;

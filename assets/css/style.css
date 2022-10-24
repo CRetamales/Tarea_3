@@ -164,6 +164,18 @@
 .dbugle-container__section_2 .noticia:last-child {
   border-right: none;
 }
+@media screen and (max-width: 770px) {
+  .dbugle-container__section_2 {
+    flex-direction: column;
+  }
+  .dbugle-container__section_2 .noticia {
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
+  .dbugle-container__section_2 .noticia:last-child {
+    border-bottom: none;
+  }
+}
 .dbugle-container__footer {
   grid-column: 1/4;
   grid-row: 20/20;
