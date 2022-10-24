@@ -17,4 +17,4 @@ _usando SASS, CSSGrid, github y githubpages_
 
 - Carlos Retamales
 
-![](https://github.com/CRetamales/Tarea_3/extra/giphy.gif)
+![](https://github.com/CRetamales/Tarea_3/blob/master/extra/giphy.gif)
